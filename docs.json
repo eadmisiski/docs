@@ -3,48 +3,47 @@
   "theme": "mint",
   "name": "eAdmisi",
   "colors": {
-    "primary": "#f63a4c",
-    "light": "#f63a4c",
-    "dark": "#f63a4c"
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Panduan",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "Pengenalan",
+            "group": "Getting started",
             "pages": [
               "index",
               "quickstart",
-              "profile",
-              "exit-portal"
+              "development"
             ]
           },
           {
-            "group": "Fitur Utama",
-            "expanded": true,
+            "group": "Customization",
             "pages": [
-              {
-                "group": "Pendaftaran PMB",
-                "icon" : "graduation-cap",
-                "pages": [
-                  "main-feature/akademik/mahasiswa",
-                ]
-              },
-              {
-                "group": "Tagihan",
-                "icon":"folder-gear",
-                "pages": [
-                  "main-feature/pengaturan-pembayaran/tarif-perangkatan"
-                ]
-              }
+              "essentials/settings",
+              "essentials/navigation"
             ]
           },
           {
-            "group": "Administrator",
-            "pages": ["administrator/manajemen-pengguna"]
+            "group": "Writing content",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
           }
         ]
       },
@@ -72,13 +71,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "ecampuz.com",
-          "href": "https://ecampuz.com",
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://blog.ecampuz.com",
+          "href": "https://mintlify.com/blog",
           "icon": "newspaper"
         }
       ]
@@ -92,31 +91,32 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:info@ecampuz.com"
+        "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Aplikasi",
-      "href": "https://staging-et82.ecampuz.com/develop-8.2/epembayaran/"
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
     }
   },
   "contextual": {
     "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
   },
   "footer": {
     "socials": {
-      "instagram": "https://www.instagram.com/ecampuzofficial/",
-      "linkedin": "https://id.linkedin.com/company/ecampuzofficial"
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
 }
