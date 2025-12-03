@@ -1,49 +1,50 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "eAdmisi",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#f63a4c",
+    "light": "#f63a4c",
+    "dark": "#f63a4c"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Panduan",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Pengenalan",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "profile",
+              "exit-portal"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Fitur Utama",
+            "expanded": true,
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              {
+                "group": "Pendaftaran PMB",
+                "icon" : "graduation-cap",
+                "pages": [
+                  "main-feature/akademik/mahasiswa",
+                ]
+              },
+              {
+                "group": "Tagihan",
+                "icon":"folder-gear",
+                "pages": [
+                  "main-feature/pengaturan-pembayaran/tarif-perangkatan"
+                ]
+              }
             ]
           },
           {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
+            "group": "Administrator",
+            "pages": ["administrator/manajemen-pengguna"]
           }
         ]
       },
@@ -71,13 +72,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "ecampuz.com",
+          "href": "https://ecampuz.com",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.ecampuz.com",
           "icon": "newspaper"
         }
       ]
@@ -91,32 +92,31 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:info@ecampuz.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Aplikasi",
+      "href": "https://staging-et82.ecampuz.com/develop-8.2/epembayaran/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/ecampuzofficial/",
+      "linkedin": "https://id.linkedin.com/company/ecampuzofficial"
     }
   }
 }
